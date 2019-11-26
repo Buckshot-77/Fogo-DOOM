@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--- pixel-index foi uma variável criada para a função e representa o valor de intensidade do mesmo. Por conta disso, um ponto é adicionado antes de seu nome para que seu estilo em CSS possa ser codificado-->
+        <meta charset="UTF-8">
+        <title>Fogo do DOOM</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 1px solid #000000
+            }
+            
+            td {
+                width: 50px;
+                height: 50px;
+                border: 1px solid #000000;
+                text-align: center;
+                vertical-align: center;
+                font-family: monospace;
+                font-size: 18px;
+                position: relative;
+            }
+
+            .pixel-index{
+                font-size: 10px;
+                display: inline-block;
+                position: absolute;
+                top: 2px;
+                right: 2px;
+                color: #999999;
+            }
+            td.pixel{
+               width: 4px;
+               height: 4px;
+               border: 0;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="fireCanvas"></div>
+        <script src="fire.js"></script>
+    </body>
+</html>
